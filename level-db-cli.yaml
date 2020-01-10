@@ -1,0 +1,3 @@
+db:
+  # level db path
+  path: /home/bjzhang03/gocode/src/github.com/bjzhang03/level-db-cli/db
