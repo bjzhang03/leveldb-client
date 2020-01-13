@@ -16,7 +16,7 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/bjzhang03/level-db-cli/leveldbclient"
+	"github.com/bjzhang03/leveldb-cli/dboperation"
 	"github.com/prometheus/common/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -42,11 +42,11 @@ Multiply key can be split by space For example:
 			}
 		}()
 		if len(args) == 1 && args[0] == "-" {
-			result := leveldbclient.GetAll(viper.GetString("db.path"))
+			result := dboperation.GetAll(viper.GetString("db.path"))
 			log.Infof("Got all the data! %s ", result)
 		} else {
 			for _, key := range args {
-				result := leveldbclient.Get(key, viper.GetString("db.path"))
+				result := dboperation.Get(key, viper.GetString("db.path"))
 				log.Infof("Get the result [%s, %s]", key, result)
 			}
 		}

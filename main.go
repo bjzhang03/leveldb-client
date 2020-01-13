@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/bjzhang03/level-db-cli/cmd"
+import "github.com/bjzhang03/leveldb-cli/cmd"
 
 func main() {
 	cmd.Execute()

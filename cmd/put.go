@@ -18,7 +18,7 @@ package cmd
 import (
 	"strings"
 
-	"github.com/bjzhang03/level-db-cli/leveldbclient"
+	"github.com/bjzhang03/leveldb-cli/dboperation"
 	"github.com/prometheus/common/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -46,7 +46,7 @@ Multiply (key,value) pair can by split by space For example:
 		for _, key := range args {
 			params := strings.Split(key, ",")
 			if len(params) == 2 {
-				err := leveldbclient.Put(params[0], params[1], viper.GetString("db.path"))
+				err := dboperation.Put(params[0], params[1], viper.GetString("db.path"))
 				if err != nil {
 					log.Error("Put the [ %s, %s] into db failed!", params[0], params[1])
 				}

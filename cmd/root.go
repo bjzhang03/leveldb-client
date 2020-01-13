@@ -28,7 +28,7 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "level-db-cli",
+	Use:   "leveldb-cli",
 	Short: "A brief description of your application",
 	Long: `A longer description that spans multiple lines and likely contains
 examples and usage of using your application. For example:
@@ -57,7 +57,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $PWD/level-db-cli.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $PWD/leveldb-cli.yaml)")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -73,9 +73,9 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".level-db-cli" (without extension).
+		// Search config in home directory with name ".leveldb-cli" (without extension).
 		viper.AddConfigPath(pwdpath)
-		viper.SetConfigName("level-db-cli")
+		viper.SetConfigName("leveldb-cli")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match

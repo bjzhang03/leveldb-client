@@ -318,3 +318,36 @@
 18:00:22.770631 db@janitor F·10 G·0
 18:00:22.770735 db@open done T·91.044722ms
 18:00:22.770923 table@compaction L0·6 -> L1·0 S·714B Q·16
+=============== Jan 13, 2020 (CST) ===============
+09:45:35.680622 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:45:35.680720 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:45:35.680733 db@open opening
+09:45:35.680783 journal@recovery F·1
+09:45:35.681255 journal@recovery recovering @58
+09:45:35.681557 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:45:35.798909 db@janitor F·11 G·1
+09:45:35.798957 db@janitor removing table-60
+09:45:35.799078 db@open done T·118.332986ms
+09:45:35.799353 table@compaction L0·6 -> L1·0 S·714B Q·16
+=============== Jan 13, 2020 (CST) ===============
+09:47:31.438395 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:47:31.438510 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:47:31.438531 db@open opening
+09:47:31.438594 journal@recovery F·1
+09:47:31.439045 journal@recovery recovering @60
+09:47:31.439529 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:47:31.542421 db@janitor F·11 G·1
+09:47:31.542453 db@janitor removing table-62
+09:47:31.542586 db@open done T·104.039009ms
+09:47:31.542753 table@compaction L0·6 -> L1·0 S·714B Q·16
+=============== Jan 13, 2020 (CST) ===============
+09:47:36.554183 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:47:36.554326 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:47:36.554341 db@open opening
+09:47:36.554385 journal@recovery F·1
+09:47:36.554908 journal@recovery recovering @62
+09:47:36.555187 version@stat F·[6 2] S·954B[714B 240B] Sc·[1.50 0.00]
+09:47:36.655687 db@janitor F·11 G·1
+09:47:36.655737 db@janitor removing table-64
+09:47:36.655838 db@open done T·101.483876ms
+09:47:36.656041 table@compaction L0·6 -> L1·0 S·714B Q·16
